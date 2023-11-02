@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "EuclidCircularLight";
+  font-weight: 400;
+  src: local("Euclid"),
+    url(./fonts/Euclid-Circular-A-Light.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: "EuclidCircularBold";
+  font-weight: 600;
+  src: local("Euclid"),
+    url(./fonts/Euclid-Circular-A-SemiBold.ttf) format("truetype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                                'embedded-opentype', and 'svg' */
+}
+@font-face {
+  font-family: "Gobold";
+  font-weight: 400;
+  src: local("Gobold"), url(./fonts/Gobold-Regular.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                                  'embedded-opentype', and 'svg' */
+}
+.font-gobold {
+  font-family: Gobold;
+}
+
+.font-euclid-light {
+  font-family: EuclidCircularLight;
+}
+
+.font-euclid-bold {
+  font-family: EuclidCircularBold;
+}
