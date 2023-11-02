@@ -99,11 +99,11 @@ export default function Footer() {
           <div>All rights reserved </div>
         </div> */}
         <div className="bottom mt-6 mb-6 md:mb-8 flex gap-2 justify-between mx-2 md:mx-8 items-center">
-        <div className="footer-logo text-black md:text-md md:font-semibold flex gap-1 items-center">
-          <img width={25} src="/FooterSection/logomark.svg" alt="" />
+        <div className="footer-logo text-black italic md:text-md md:font-semibold flex gap-1 items-center">
+          {/* <img width={25} src="/FooterSection/l.svg" alt="" /> */}
           <h2>  JoinVitMe</h2>
         </div>
-        <div className="footer-text text-gray-500">
+        <div className="footer-text text-center text-gray-500">
           © Designed & Developed By Prany Tiwari. All rights reserved.
         </div>
       </div>

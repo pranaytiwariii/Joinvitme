@@ -3,28 +3,28 @@ import React from "react";
 // import zap from '/Features1/cards/zap.svg'
 // import barchart from '/Features1/cards/bar-chart-2.svg'
 // import arrow from '/HeroSection/arrow-right.svg'
-import insta1 from "/Instapic/one.png";
-import insta2 from "/Instapic/two.png";
-import { useState } from "react";
+// import insta1 from "/Instapic/one.png";
+// import insta2 from "/Instapic/two.png";
+// import { useState } from "react";
 
-const cardData = [
-  {
-    id: 0,
-    img: { insta1 },
-    header: "LAKESIDE HIKE",
-    discription:
-      "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
-    location: "Virar",
-  },
-  {
-    id: 1,
-    img: { insta2 },
-    header: "LAKESIDE HIKE",
-    discription:
-      "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
-    location: "Virar",
-  },
-];
+// const cardData = [
+//   {
+//     id: 0,
+//     img: { insta1 },
+//     header: "LAKESIDE HIKE",
+//     discription:
+//       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
+//     location: "Virar",
+//   },
+//   {
+//     id: 1,
+//     img: { insta2 },
+//     header: "LAKESIDE HIKE",
+//     discription:
+//       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
+//     location: "Virar",
+//   },
+// ];
 
 export default function Instapics() {
   return (
@@ -51,7 +51,7 @@ export default function Instapics() {
 
         {/* ----------------------image section---------------------- */}
         <div>
-            <img src={insta1} alt="" />
+            {/* <img src={insta1} alt="" /> */}
           {/* {navLink.map((step) => (
             <div>
               key={step}
