@@ -54,7 +54,7 @@ export default function Footer() {
     <div className="pt-16 text-white flex flex-col items-center gap-9">
       <div className="sm:px-16 px-8 w-full flex md:flex-row flex-col gap-9 justify-between">
         <div className="flex flex-col gap-10 items-start">
-          <img className="h-20" src="/Navbar/logo.png" alt="logo" />
+          <img className="h-20" src="Footer/logo.png" alt="logo" />
           <div className="flex flex-col justify-center items-start">
             <p className="text-black text-xl font-normal">
               JoinVitMe - get social!
