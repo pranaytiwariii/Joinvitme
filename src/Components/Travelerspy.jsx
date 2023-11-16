@@ -1,28 +1,32 @@
 import React from "react";
-import Hero from '/Hero/Background.png'
+import Hero from "/Hero/Background.png";
+import { NavLink } from "react-router-dom";
 
 export default function Travelerspy() {
   return (
-    <section className="  flex mx-2 md:mx-4 flex-col items-center gap-12 ">
+    <section className=" pt-6 flex mx-2 md:mx-4 flex-col items-center gap-12 ">
       <div className="top-container">
+         <NavLink to="/Adventure Calendar">
         <div className="badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
           <p className="label-1 bg-white pl-1 pr-1 justify-start rounded-2xl">
             New Journey
           </p>
           <div className="label-2 flex gap-1">
-            <p>Checkout the Event Calendar</p>
+              <p>Checkout the Event Calendar</p>
             <img src="HeroSection/arrow-right.svg" alt="arrow-right" />
           </div>
         </div>
+        </NavLink>
         <div className="heading-section mt-3 flex flex-col gap-4 items-center">
           <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
             Explore the world with a smile
           </h1>
-          <p className="text-gray-500 text-sm md:text-xs max-w-sm overflow-hidden text-center">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
-            purus sit amet luctus venenatis, lectus magna fringilla urna,
-            porttitor rhoncus dolor purus non enim praesent elementum facilisis
-            leo,
+          <p className="text-gray-500 text-sm md:text-base  max-w-sm lg:max-w-lg overflow-hidden text-center">
+            Welcome to Joinvithme, where we are passionate about connecting you
+            with the untamed beauty of the great outdoors. We are not just a
+            travel arrangement company, we are your ticket to genuine, immersive
+            camping and trekking adventures that will awaken your spirit,
+            challenge your limits, and leave you with memories to treasure.
           </p>
         </div>
         <div className="btn-section flex justify-center gap-6 mt-8">
@@ -41,11 +45,7 @@ export default function Travelerspy() {
       </div>
       <div className="bottom-container">
         <div className="img-section">
-          <img
-            className="lg:w-[90%] m-auto"
-            src={Hero}
-            alt="mackbook"
-          />
+          <img className="lg:w-[90%] m-auto" src={Hero} alt="mackbook" />
         </div>
         {/* <p className="text-center text-sm mt-6 md:mt-10 text-gray-500">
           social's

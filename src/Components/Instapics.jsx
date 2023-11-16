@@ -60,7 +60,6 @@ export default function Instapics() {
           ))} */}
         </div>
         <img src="/insta.png" alt="" />
-        <img src="/testimonial.png" alt="" />
       </section>
     </div>
   );

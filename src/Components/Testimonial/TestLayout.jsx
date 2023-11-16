@@ -1,31 +1,31 @@
 import React from "react";
 
 const items = [
-    {
-      id: 1,
-      photo: "/Footer/logo.png",
-      person: "Pranay Tiwari",
-      about:"2nd year computer science student at Tcet.",
-      review:
-        "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
-    },
-    {
-      id: 2,
-      photo: "/Footer/logo.png",
-      person: "Pranay Tiwari",
-      about:"2nd year computer science student at Tcet.",
-      review:
-        "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
-    },
-    {
-      id: 3,
-      photo: "/Footer/logo.png",
-      person: "Pranay Tiwari",
-      about:"2nd year computer science student at Tcet.",
-      review:
-        "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
-    },
-  ];
+  {
+    id: 1,
+    photo: "/Footer/logo.png",
+    person: "Pranay Tiwari",
+    about: "2nd year computer science student at Tcet.",
+    review:
+      "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
+  },
+  {
+    id: 2,
+    photo: "/Footer/logo.png",
+    person: "Pranay Tiwari",
+    about: "2nd year computer science student at Tcet.",
+    review:
+      "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
+  },
+  {
+    id: 3,
+    photo: "/Footer/logo.png",
+    person: "Pranay Tiwari",
+    about: "2nd year computer science student at Tcet.",
+    review:
+      "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
+  },
+];
 
 export default function TestLayout() {
   return (
@@ -40,19 +40,26 @@ export default function TestLayout() {
           <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
             What they say about us
           </h1>
-          <p className="text-xl text-center text-[#667085] sm:text-xl sm:px-12 lg:px-72">
-            Powerful, self-serve product and growth analytics to help you
-            convert, engage, and retain more users. Trusted by over 4,000
-            startups.
-          </p>
+          {/* <p className="text-xl text-center text-[#667085] sm:text-xl sm:px-12 lg:px-72">
+            Joinvithme is not just about adventure; it's about responsibility
+            too. We will teach you how to respect and protect the environment,
+            fostering a sense of stewardship for the natural world. Learn the
+            secrets of surviving and thriving in the wild, and let us show you
+            that having fun and making memories in the wilderness is both
+            accessible and exhilarating.
+          </p> */}
         </div>
       </div>
 
-      <div className="flex">
+      <div className="flex flex-wrap">
         {items.map((step) => (
-          <div key={step.id} id={step.id} className=" lg:w-1/3 pb-5 p-20 hover:bg-gray-100">
-            <div className="flex text-lg font-bold">
-              <img src={step.photo} className="h-16 pr-5 " alt="" />
+          <div
+            key={step.id}
+            id={step.id}
+            className=" lg:w-1/3 pb-5 p-10 hover:bg-gray-100"
+          >
+            <div className="flex text-lg hover:text-[#6941C6] font-bold">
+              <img src={step.photo} className="h-16 pr-5" alt="" />
               <div>
                 {step.person}
                 <p className="font-semibold text-[#667085] text-sm">

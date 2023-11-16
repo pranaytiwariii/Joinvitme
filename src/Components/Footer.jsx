@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const data = [
   {
     imgData: [
@@ -16,28 +18,33 @@ const data = [
     ],
     linkData1: [
       {
+        id:0,
         title: "Home",
         link: "/",
       },
       {
+        id:1,
         title: "Contact",
         link: "/",
       },
       {
-        title: "Join a Open Group ",
-        link: "/",
+        id:2,
+        title: "Book Experience",
+        link: "/Book Experience",
       },
       {
+        id:3,
         title: "About us",
-        link: "/",
+        link: "/About Us",
       },
       {
-        title: "Book a Experience",
-        link: "/",
+        id:4,
+        title: "Adventure Calendar",
+        link: "/Adventure Calendar",
       },
-      {
+      {id:5,
         title: "Blogs",
-        link: "/",
+        link: "/Blogs",
       },
     ],
     addressData: [
@@ -57,7 +64,7 @@ export default function Footer() {
           <img className="h-20" src="Footer/logo.png" alt="logo" />
           <div className="flex flex-col justify-center items-start">
             <p className="text-black text-xl font-normal">
-              JoinVitMe - get social!
+              JoinWithMe - get social's!
             </p>
             <div className="py-2 flex items-start gap-5 social-icons">
               {data.map((item) => {
@@ -77,9 +84,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 grid-rows-3 lg:gap-x-40 gap-x-28 text-[#ACB1FF] text-lg font-medium justify-items-start items-center">
           {data.map((item) => {
             return item.linkData1.map((value, i) => (
-              <a key={i} href={value.link}>
-                <p>{value.title}</p>
-              </a>
+              <NavLink key={value.id} to={value.link}>
+                
+                {value.title}
+              
+              </NavLink>
             ));
           })}
         </div>
@@ -101,7 +110,7 @@ export default function Footer() {
         <div className="bottom mt-6 mb-6 md:mb-8 flex gap-2 justify-between mx-2 md:mx-8 items-center">
         <div className="footer-logo text-black italic md:text-md md:font-semibold flex gap-1 items-center">
           {/* <img width={25} src="/FooterSection/l.svg" alt="" /> */}
-          <h2>  JoinVitMe</h2>
+          <h2>  JoinWitHMe</h2>
         </div>
         <div className="footer-text text-center text-gray-500">
           © Designed & Developed By Prany Tiwari. All rights reserved.

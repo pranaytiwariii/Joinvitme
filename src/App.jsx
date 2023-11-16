@@ -1,20 +1,23 @@
-import Analytics from "./Components/Analytics"
-import Footer from "./Components/Footer"
-import Instapics from "./Components/Instapics"
-import Navbar from "./Components/Navbar"
-import TestLayout from "./Components/Testimonial/TestLayout"
-import Travelerspy from "./Components/Travelerspy"
+// import Analytics from "./Components/Analytics"
+// import Footer from "./Components/Footer"
+// import Instapics from "./Components/Instapics"
+// import Navbar from "./Components/Navbar"
+// import TestLayout from "./Components/Testimonial/TestLayout"
+// import Travelerspy from "./Components/Travelerspy"
+
+import MainRouter from "./Router"
 
 function App() {
 
   return (
     <>
-    <Navbar />
+    {/* <Navbar />
     <Travelerspy />
     <Analytics />
     <Instapics />
     <TestLayout />
-    <Footer />
+    <Footer /> */}
+    <MainRouter />
     </>
   )
 }

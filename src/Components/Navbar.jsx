@@ -4,6 +4,7 @@ import { useState } from "react";
 import menu from "/Navbar/menu1.svg";
 import close1 from "/Navbar/close1.svg";
 import whatsapp from "/Navbar/whatsapp.svg";
+import { NavLink } from "react-router-dom";
 
 const navLink = [
   {
@@ -14,63 +15,52 @@ const navLink = [
   {
     id: 1,
     header: "Adventure Calendar",
-    link: "/",
+    link: "/Adventure Calendar",
   },
   {
     id: 2,
     header: "Book Experience",
-    link: "/",
+    link: "/Book Experience",
   },
   {
     id: 3,
     header: "About Us",
-    link: "/",
+    link: "/About Us",
   },
   {
     id: 4,
     header: "Blogs",
-    link: "/",
+    link: "/Blogs",
   },
 ];
 
 export default function Navbar() {
   const [toggle, setToggle] = useState(false);
-
   const handleClick = () => setToggle((prevToggle) => !prevToggle);
   const closeMenu = () => setToggle(false);
 
-  // const handleScroll = () => {
-  //   const section = document.getElementById("sponserSection");
-  //   if (section) {
-  //     section.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
 
   return (
     <>
-      <div className="font-sans text-[#451c1c] mt-2">
+      <div className="font-sans border-b-4 text-[#451c1c] mt-2">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 px-2 sm:px-8">
             {/* Logo */}
             <div className="flex items-center gap-3 rounded-2xl border border-white border-opacity-25">
               <img src={logo} alt="" className="h-12" />
               <a href="/" className="italic text-sm sm:text-lg">
-                JOINVITHME
+                JOIN WITH ME
               </a>
             </div>
             {/* Navlinks */}
             <div className="hidden md:flex">
               <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
                 {navLink.map((step) => (
-                  <a
-                    key={step.id}
-                    id={step.id}
-                    className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
-                    href={step.link}
-                    rel="noreferrer"
-                  >
+                  <NavLink key={step.id} to={step.link} className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium">
+                    
                     {step.header}
-                  </a>
+                  
+                  </NavLink>
                 ))}
               </div>
             </div>
@@ -118,20 +108,16 @@ export default function Navbar() {
           <div className="flex flex-col md:hidden">
             <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
               {navLink.map((step) => (
-                <a
-                  key={step.id}
-                  className="text-center cursor-pointer text-[#505052] hover:text-[#6941C6] block px-3 py-2 rounded-md text-base font-medium"
-                  href={step.link}
-                  target="_blank"
-                  rel="noreferrer"
-                  onClick={closeMenu}
-                >
+                <NavLink key={step.id} to={step.link} className="text-center cursor-pointer text-[#505052] hover:text-[#6941C6] block px-3 py-2 rounded-md text-base font-medium">
+                  
                   {step.header}
-                </a>
+              
+                </NavLink>
               ))}
             </div>
           </div>
         )}
+        
       </div>
     </>
   );
