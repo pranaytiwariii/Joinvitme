@@ -1,30 +1,22 @@
-import React from "react";
-// import mail from '/Features1/cards/mail.svg'
-// import zap from '/Features1/cards/zap.svg'
-// import barchart from '/Features1/cards/bar-chart-2.svg'
-// import arrow from '/HeroSection/arrow-right.svg'
-// import insta1 from "/Instapic/one.png";
-// import insta2 from "/Instapic/two.png";
-// import { useState } from "react";
 
-// const cardData = [
-//   {
-//     id: 0,
-//     img: { insta1 },
-//     header: "LAKESIDE HIKE",
-//     discription:
-//       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
-//     location: "Virar",
-//   },
-//   {
-//     id: 1,
-//     img: { insta2 },
-//     header: "LAKESIDE HIKE",
-//     discription:
-//       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
-//     location: "Virar",
-//   },
-// ];
+const cardData = [
+  {
+    id: 0,
+    img: "/instapic/one.png ",
+    header: "LAKESIDE HIKE",
+    discription:
+      "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
+    location: "Virar",
+  },
+  {
+    id: 1,
+    img: "/Instapic/one.png",
+    header: "LAKESIDE HIKE",
+    discription:
+      "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
+    location: "Virar",
+  },
+];
 
 export default function Instapics() {
   return (
@@ -50,16 +42,24 @@ export default function Instapics() {
         </div>
 
         {/* ----------------------image section---------------------- */}
-        <div>
-            {/* <img src={insta1} alt="" /> */}
-          {/* {navLink.map((step) => (
-            <div>
-              key={step}
-              <img src={cardData.img} alt="" />
+        <div></div>
+        <div className="flex flex-wrap justify-center gap-5">
+          {cardData.map((index) => (
+            <div
+              key={index.id}
+              className="bg-[#F9F5FF] text-clip border-2 rounded-md border-purple-500 p-5 "
+            >
+              <img src={index.img} alt="" />
+              <h1 className="text-[#6941C6] text-xl font-bold">
+                {index.header}
+              </h1>
+              <div className="w-80 text-[#667085]">
+                <p>{index.discription}</p>
+                <p className="text-[#6941C6] text-base">{index.location}</p>
+              </div>
             </div>
-          ))} */}
+          ))}
         </div>
-        <img src="/insta.png" alt="" />
       </section>
     </div>
   );
