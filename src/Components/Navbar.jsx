@@ -5,6 +5,7 @@ import menu from "/Navbar/menu1.svg";
 import close1 from "/Navbar/close1.svg";
 import whatsapp from "/Navbar/whatsapp.svg";
 import { NavLink } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 const navLink = [
   {
@@ -42,7 +43,13 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="font-sans border-b-4 text-[#451c1c] mt-2">
+      <motion.div initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 4,
+            type: "spring",
+            delay: 0.5
+          }} className="font-sans border-b-4 z-20 text-[#451c1c] mt-2">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 px-2 sm:px-8">
             {/* Logo */}
@@ -118,7 +125,7 @@ export default function Navbar() {
           </div>
         )}
         
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -1,10 +1,22 @@
+import React, { useEffect } from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import image from "/HeroSection/img.png";
+import { motion } from "framer-motion";
 
 export default function Analytics() {
   return (
     <div>
       <div className=" m-[2rem] lg:m-[4rem] sm:px-20">
-        <div className="flex flex-col gap-[0.75rem]  ">
+        <motion.div
+          initial={{ x: "-7rem", opacity: 0 }}
+          animate={{ x: "0", opacity: 1 }}
+          transition={{
+            duration: 4,
+            type: "spring",
+            delay: 0.5,
+          }}
+          className="flex flex-col gap-[0.75rem]  "
+        >
           <h5 className="font-semibold text-[#6941C6] lg:text-lg leading-[1.5rem]">
             Our Beginnings
           </h5>
@@ -19,8 +31,17 @@ export default function Analytics() {
             alternative - camping experiences that were uncommercialized,
             unspoiled, and unforgettable.
           </p>
-        </div>
-        <div className="flex mt-6 flex-col text-end gap-[0.75rem]">
+        </motion.div>
+        <motion.div
+          initial={{ x: "7rem", opacity: 0 }}
+          animate={{ x: "0", opacity: 1 }}
+          transition={{
+            duration: 4,
+            type: "spring",
+            delay: 0.5,
+          }}
+          className="flex mt-6 flex-col text-end gap-[0.75rem]"
+        >
           <h5 className="font-semibold text-[#6941C6] lg:text-lg leading-[1.5rem]">
             Our Philosophy
           </h5>
@@ -34,8 +55,17 @@ export default function Analytics() {
             the pulse of the wild, experience the thrill of the unknown, and
             savor the raw beauty of untouched landscapes.
           </p>
-        </div>
-        <div className="flex flex- mt-6 gap-[0.75rem]  ">
+        </motion.div>
+        <motion.div
+          initial={{ x: "-7rem", opacity: 0 }}
+          animate={{ x: "0", opacity: 1 }}
+          transition={{
+            duration: 4,
+            type: "spring",
+            delay: 0.5,
+          }}
+          className="flex flex- mt-6 gap-[0.75rem]  "
+        >
           <h5 className="font-semibold text-[#6941C6] lg:text-lg leading-[1.5rem]">
             <div className="flex flex-col gap-[0.75rem]  ">
               <h5 className="font-semibold text-[#6941C6] lg:text-lg leading-[1.5rem]">
@@ -54,7 +84,7 @@ export default function Analytics() {
               </p>
             </div>
           </h5>
-        </div>
+        </motion.div>
         <div className="flex-col  content-center justify-center gap-x-[6rem] my-[3rem] xl:my-[4rem] ">
           <div className="grid grid-cols-1 self-center justify-center sm:grid-cols-2 gap-y-[2rem] max-[990px]:gap-x-[6rem]  md:basis-2/3 content-center justify-self-center  ">
             <div className="flex flex-col">
@@ -114,7 +144,7 @@ export default function Analytics() {
             </div>
           </div>
         </div>
-        <h2 className="font-bold lg:font-semibold text-gray-900 text-[1.7rem] lg:text-[2.25rem] leading-[1.75rem] tracking-[-0.045rem] ">
+        {/* <h2 className="font-bold lg:font-semibold text-gray-900 text-[1.7rem] lg:text-[2.25rem] leading-[1.75rem] tracking-[-0.045rem] ">
           In the year 2022,
         </h2>
         <p className="font-normal lg:text-[1.25rem] lg:leading-[1.875rem] text-gray-500 sm:w-[75%] mt-0">
@@ -124,7 +154,7 @@ export default function Analytics() {
           by a shared love for the wilderness, set out to create an alternative
           - camping experiences that were uncommercialized, unspoiled, and
           unforgettable.
-        </p>
+        </p> */}
       </div>
     </div>
   );
