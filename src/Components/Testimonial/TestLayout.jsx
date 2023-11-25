@@ -1,4 +1,25 @@
-import React from "react";
+import { motion } from "framer-motion";
+import { useRef } from "react";
+import ReactPlayer from "react-player";
+
+const bottomArr = [
+  {
+    id: 0,
+    head: "Nikita Sharma",
+    subHead: "Senior developer at Microsoft  ",
+    description:
+      "Joined us for a memorable Raw Camping experience on 25th November 2023, Saturday. It was a realy awsome movement spending time with nature , exploring me 🏕🌌      ",
+    img: "/Advanture/Niki's testomony.mp4",
+  },
+  // {
+  //   id:1,
+  //   head: "Lake-side camping",
+  //   subHead: "Accelerate your token’s journey by boosting its liquidity",
+  //   description:
+  //     "We invest in building long-term, sustainable relationships and support our projects in their growth journey with our services, industry expertise and network.",
+  //   img: token,
+  // },
+];
 
 const items = [
   {
@@ -28,6 +49,17 @@ const items = [
 ];
 
 export default function TestLayout() {
+  const videoRef = useRef(null);
+
+  const playPauseHandler = () => {
+    const video = videoRef.current;
+
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  };
   return (
     <div className="flex mx-2 md:mx-4 flex-col items-center gap-12 pt-10">
       <div className="top-container">
@@ -40,16 +72,45 @@ export default function TestLayout() {
           <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
             What they say about us
           </h1>
-          {/* <p className="text-xl text-center text-[#667085] sm:text-xl sm:px-12 lg:px-72">
-            Joinvithme is not just about adventure; it's about responsibility
-            too. We will teach you how to respect and protect the environment,
-            fostering a sense of stewardship for the natural world. Learn the
-            secrets of surviving and thriving in the wild, and let us show you
-            that having fun and making memories in the wilderness is both
-            accessible and exhilarating.
-          </p> */}
         </div>
       </div>
+
+      <section className="bg-white mt-10 text-center text-black relative md:p-0 z-10">
+        {bottomArr.map((step, index) => (
+          <div
+            className="relative z-10 gap-40 flex flex-col items-center justify-around mt-5 md:flex-row"
+            key={index}
+          >
+            <motion.div
+              initial={{ x: "7rem", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{
+                duration: 2,
+                type: "spring",
+                delay: 0.5,
+              }}
+              className="text-left md:text-left"
+            >
+              <p className="max-w-sm mb-6 text-3xl leading-snug md:text-4xl">
+                {step.head}
+              </p>
+              <p className="max-w-sm mb-5 text-xl font-bold">{step.subHead}</p>
+              <p className="max-w-sm mb-6 text-xl text-black">
+                {step.description}
+              </p>
+            </motion.div>
+            <div className="w-60 h-80">
+              <ReactPlayer
+                className="react-player fixed-bottom"
+                url="https://youtube.com/shorts/9TpF8YoPLdUff"
+                width="100%"
+                height="100%"
+                controls={true}
+              />
+            </div>
+          </div>
+        ))}
+      </section>
 
       <div className="flex flex-wrap">
         {items.map((step) => (

@@ -76,7 +76,7 @@ export default function Navbar() {
               <button className="rounded-xl px-4 py-2 border-2 border-gray-500 text-lg hover:opacity-70 transition duration-300 ease-in-out">
                 <div className="flex gap-1.5 text-black">
                   {/* <img src={discord} alt="" /> */}
-                  <a href="/" target="_blank" rel="noreferrer">
+                  <a href="https://chat.whatsapp.com/L1RvnPmuVSGGDdFLbenzF1" target="_blank" rel="noreferrer">
                     Join Us
                   </a>
                 </div>

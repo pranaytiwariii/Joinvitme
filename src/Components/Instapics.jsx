@@ -10,7 +10,7 @@ const cardData = [
   },
   {
     id: 1,
-    img: "/Instapic/one.png",
+    img: "/Advanture/karjat.jpg",
     header: "LAKESIDE HIKE",
     discription:
       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
@@ -43,7 +43,7 @@ export default function Instapics() {
 
         {/* ----------------------image section---------------------- */}
         <div></div>
-        <div className="flex flex-wrap justify-center gap-5">
+        <div className="flex flex-wrap justify-center w-40 gap-5">
           {cardData.map((index) => (
             <div
               key={index.id}
