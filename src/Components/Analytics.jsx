@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import image from "/HeroSection/img.png";
 import { motion } from "framer-motion";
 
 export default function Analytics() {
@@ -132,15 +131,15 @@ export default function Analytics() {
               </p>
             </div>
           </div>
-          <div className="flex gap-5">
-            <div className="flex-1 flex justify-center content-center  md:basis-1/3  ">
-              <img src={image} alt="" />
+          <div className="mt-5 sm:flex p-2 gap-5">
+            <div className="flex justify-center content-center md:basis-1/3 pb-2  ">
+              <img src="instapic/5.jpg" alt="" />
             </div>
-            <div className="flex-1 flex justify-center content-center  md:basis-1/3  ">
-              <img src={image} alt="" />
+            <div className="flex justify-center content-center  md:basis-1/3 pb-2  ">
+              <img src="instapic/7.jpg" alt="" />
             </div>
-            <div className="flex-1 flex justify-center content-center  md:basis-1/3  ">
-              <img src={image} alt="" />
+            <div className=" flex justify-center content-center  md:basis-1/3 pb-2  ">
+              <img src="instapic/9.jpg" alt="" />
             </div>
           </div>
         </div>
