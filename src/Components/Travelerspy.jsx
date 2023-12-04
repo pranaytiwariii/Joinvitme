@@ -42,10 +42,7 @@ export default function Travelerspy() {
           </h1>
           <p className="text-gray-500 text-sm md:text-base  max-w-sm lg:max-w-lg overflow-hidden text-center">
             Welcome to Joinvithme, where we are passionate about connecting you
-            with the untamed beauty of the great outdoors. We are not just a
-            travel arrangement company, we are your ticket to genuine, immersive
-            camping and trekking adventures that will awaken your spirit,
-            challenge your limits, and leave you with memories to treasure.
+            with the untamed beauty of the great outdoors. 
           </p>
         </motion.div>
         <div className="btn-section flex justify-center gap-6 mt-8">

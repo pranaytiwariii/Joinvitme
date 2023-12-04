@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Analytics() {
   return (
-    <div>
+    <div className='mb-0'>
       <div className=" m-[2rem] lg:m-[4rem] sm:px-20">
         <motion.div
           initial={{ x: "-7rem", opacity: 0 }}

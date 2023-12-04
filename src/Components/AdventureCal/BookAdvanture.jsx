@@ -12,7 +12,17 @@ export default function BookAdvanture() {
         </p>
         <div className="label-2 flex gap-1">
           <p>Checkout the Event Calendar</p>
-          {/* <img src="HeroSection/arrow-right.svg" alt="arrow-right" /> */}
+          <motion.img
+            initial={{ x: "0", opacity: 1 }}
+            animate={{ x: "7rem", opacity: 0 }}
+            transition={{
+              duration: 2,
+              type: "spring",
+              delay: 0.5,
+            }}
+            src="HeroSection/arrow-right.svg"
+            alt="arrow-right"
+          />
         </div>
       </div>
       {/* <img

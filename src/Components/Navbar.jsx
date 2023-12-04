@@ -49,7 +49,7 @@ export default function Navbar() {
             duration: 4,
             type: "spring",
             delay: 0.5
-          }} className="font-sans border-b-4 z-20 text-[#451c1c] mt-2">
+          }} className="font-sans z-20 text-[#451c1c] mt-2">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 px-2 sm:px-8">
             {/* Logo */}
