@@ -1,8 +1,9 @@
+import { motion } from "framer-motion";
 
 const cardData = [
   {
     id: 0,
-    img: "/instapic/1.jpg ",
+    img: "/instapic/1.webp ",
     header: "LAKESIDE HIKE",
     discription:
       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
@@ -10,7 +11,7 @@ const cardData = [
   },
   {
     id: 1,
-    img: "/instapic/2.jpg",
+    img: "/instapic/2.webp",
     header: "LAKESIDE HIKE",
     discription:
       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
@@ -18,7 +19,7 @@ const cardData = [
   },
   {
     id: 2,
-    img: "/instapic/3.jpg",
+    img: "/instapic/3.webp",
     header: "LAKESIDE HIKE",
     discription:
       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
@@ -26,7 +27,7 @@ const cardData = [
   },
   {
     id: 3,
-    img: "/instapic/4.jpg",
+    img: "/instapic/4.webp",
     header: "LAKESIDE HIKE",
     discription:
       "Venture into the great outdoors, where tails wag, paws roam, and hearts are set free. Our four-legged friend knows that the best adventures start at the edge of a tranquil lake. 💙🐾",
@@ -34,11 +35,11 @@ const cardData = [
   },
   {
     id: 4,
-    img: "/instapic/5.jpg",
+    img: "/instapic/5.webp",
   },
   {
     id: 5,
-    img: "/instapic/6.jpg",
+    img: "/instapic/6.webp",
   },
   {
     id: 6,
@@ -48,13 +49,12 @@ const cardData = [
     id: 7,
     img: "/instapic/8.jpg",
   },
-
 ];
 
 export default function Instapics() {
   return (
     <div>
-      <section className="flex mx-2 md:mx-4 flex-col items-center gap-12">
+      <section className="flex mx-2 md:mx-4 flex-col items-center ">
         {/* ----------------------header section---------------------- */}
         <div className="top-container">
           <div className="badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
@@ -66,16 +66,14 @@ export default function Instapics() {
             <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
               Discover your love
             </h1>
-            <p className="text-xl text-center text-[#667085] sm:text-xl sm:px-12 lg:px-72">
+            <p className="text-xl text-center text-[#667085] sm:text-xl sm:px-12  lg:px-72">
               Powerful, self-serve product and growth analytics to help you
               convert, engage, and retain more users. Trusted by over 4,000
               startups.
             </p>
           </div>
-          
-        <div
-            className="badge-section text-1xl m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100"
-          >
+
+          <div className="badge-section text-1xl m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
             <button className="label-2 flex gap-1">
               <p>Checkout on Instagram</p>
             </button>
@@ -83,27 +81,23 @@ export default function Instapics() {
         </div>
 
         {/* ----------------------image section---------------------- */}
-        <div></div>
         <div className="flex-col  md:grid grid-cols-3 gap-3">
-        {cardData.map((index) => (
-            <div
+          {cardData.map((index) => (
+            <motion.div
+              initial={{ x: "-7rem", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{
+                duration: 4,
+                type: "spring",
+                delay: 0.5,
+              }}
               key={index.id}
               className="bg-[#F9F5FF] flex justify-self-center content-center text-clip gap-3 border-2 rounded-md border-purple-500 p-5 "
             >
               <img src={index.img} alt="" />
-              <h1 className="text-[#6941C6] text-xl font-bold">
-                {/* {index.header} */}
-              </h1>
-              {/* <div className="w-80 text-[#667085]">
-                <p>{index.discription}</p>
-                <p className="text-[#6941C6] text-base">{index.location}</p>
-              </div> */}
-            </div>
+            </motion.div>
           ))}
         </div>
-        {/* <button>
-          Explore more...
-        </button> */}
       </section>
     </div>
   );

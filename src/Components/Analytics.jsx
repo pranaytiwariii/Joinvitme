@@ -1,10 +1,9 @@
-import React, { useEffect } from 'react';
-import { animateScroll as scroll } from 'react-scroll';
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Analytics() {
   return (
-    <div className='mb-0'>
+    <div className="mb-0">
       <div className=" m-[2rem] lg:m-[4rem] sm:px-20">
         <motion.div
           initial={{ x: "-7rem", opacity: 0 }}
@@ -132,13 +131,13 @@ export default function Analytics() {
             </div>
           </div>
           <div className="mt-5 sm:flex p-2 gap-5">
-            <div className="flex justify-center content-center md:basis-1/3 pb-2  ">
-              <img src="instapic/5.jpg" alt="" />
+            <div className="flex justify-center content-center h-80 md:basis-1/3 pb-2  ">
+              <img src="instapic/5.webp" alt="" />
             </div>
-            <div className="flex justify-center content-center  md:basis-1/3 pb-2  ">
+            <div className="flex justify-center content-center h-80 md:basis-1/3 pb-2  ">
               <img src="instapic/7.jpg" alt="" />
             </div>
-            <div className=" flex justify-center content-center  md:basis-1/3 pb-2  ">
+            <div className=" flex justify-center content-center h-80 md:basis-1/3 pb-2  ">
               <img src="instapic/9.jpg" alt="" />
             </div>
           </div>
