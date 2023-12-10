@@ -96,7 +96,7 @@ export default function Navbar() {
                         )}
                       </button>
                       {navClick && (
-                        <div className="text-sm">
+                        <div className="text-sm flex flex-col">
                           <NavLink className="hover:text-[#6941C6]" to="/Waterside camping">
                             {step.ul1}
                           </NavLink>
