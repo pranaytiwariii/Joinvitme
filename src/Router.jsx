@@ -8,8 +8,8 @@ import About_Us from "./Pages/About_Us";
 import Blogs from "./Pages/Blogs";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import Water from "./Pages/water";
-import Mountain from "./Pages/mountain";
+import Water from "./Pages/Water";
+import Mountain from "./Pages/Mountain";
 
 
 const MainRouter = () => {

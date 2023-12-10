@@ -88,7 +88,7 @@ export default function Navbar() {
                     {/* {step.header} */}
                     <ol className="text-[#505052] text-center px-2 py-1 rounded-md text-md font-medium">
                       <button onClick={handleNav} className="flex">
-                        <a>{step.header}</a>
+                        {step.header}
                         {navClick ? (
                           <img className="h-5" src={step.up} alt="" />
                         ) : (
@@ -97,11 +97,11 @@ export default function Navbar() {
                       </button>
                       {navClick && (
                         <div className="text-sm">
-                          <NavLink to="/Waterside camping">
-                            <p className="hover:text-[#6941C6]">{step.ul1}</p>
+                          <NavLink className="hover:text-[#6941C6]" to="/Waterside camping">
+                            {step.ul1}
                           </NavLink>
-                          <NavLink to="/Mountaintop camping">
-                            <p className="hover:text-[#6941C6]">{step.ul2}</p>
+                          <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
+                            {step.ul2}
                           </NavLink>
                         </div>
                       )}
@@ -156,10 +156,9 @@ export default function Navbar() {
         {/* Mobile Nav */}
         {toggle && (
           <div className="flex flex-col md:hidden">
-            <>
               <ol className="text-[#505052]  px-2 py-1 rounded-md text-md font-medium">
                 <button onClick={handleNav} className="flex pl-[30%] text-center">
-                  <a className="">Types Of Camps</a>
+                  <p className="">Types Of Camps</p>
                   {navClick ? (
                     <img className="h-5" src={up} alt="" />
                   ) : (
@@ -167,19 +166,16 @@ export default function Navbar() {
                   )}
                 </button>
                 {navClick && (
-                  <div className="text-center">
-                    <NavLink to="/Waterside camping">
-                      <p className="hover:text-[#6941C6]">Waterside camping</p>
+                  <div className="flex flex-col text-center">
+                    <NavLink className="hover:text-[#6941C6]" to="/Waterside camping">
+                      Waterside camping
                     </NavLink>
-                    <NavLink to="/Mountaintop camping">
-                      <p className="hover:text-[#6941C6]">
-                        Mountain Top Camping
-                      </p>
+                    <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
+                        Mountain Top Camping 
                     </NavLink>
                   </div>
                 )}
               </ol>
-            </>
             <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
               {navLink.map((step) => (
                 <NavLink
