@@ -8,6 +8,8 @@ import About_Us from "./Pages/About_Us";
 import Blogs from "./Pages/Blogs";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import Water from "./Pages/water";
+import Mountain from "./Pages/mountain";
 
 
 const MainRouter = () => {
@@ -19,6 +21,8 @@ const MainRouter = () => {
           <Route path="/" element={<Home />} />
           <Route path="/Adventure Calendar" element={<Adventure_Calendar />} />
           <Route path="/Book Experience" element={<Book_Experience />} />
+          <Route path="/Waterside camping" element={<Water />} />
+          <Route path="/Mountaintop camping" element={<Mountain />} />
           <Route path="/About us" element={<About_Us />} />
           <Route path="/Blogs" element={<Blogs />} />
         </Routes>

@@ -5,7 +5,9 @@ import menu from "/Navbar/menu1.svg";
 import close1 from "/Navbar/close1.svg";
 import whatsapp from "/Navbar/whatsapp.svg";
 import { NavLink } from "react-router-dom";
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
+import up from "/Navbar/up.png";
+import down from "/Navbar/down.png";
 
 const navLink = [
   {
@@ -20,19 +22,29 @@ const navLink = [
   },
   {
     id: 2,
+    header: "Types of camps",
+    ul1: "Waterside Camping",
+    ul2: "Mountain top camping",
+    link1: "/TypesOfCamps",
+    link2: "/MountainTop",
+    up: "/Navbar/up.png",
+    down: "/Navbar/down.png",
+  },
+  {
+    id: 3,
     header: "Book Experience",
     link: "/Book Experience",
   },
   {
-    id: 3,
+    id: 4,
     header: "About Us",
     link: "/About Us",
   },
-  {
-    id: 4,
-    header: "Blogs",
-    link: "/Blogs",
-  },
+  // {
+  //   id: 4,
+  //   header: "Blogs",
+  //   link: "/Blogs",
+  // },
 ];
 
 export default function Navbar() {
@@ -40,18 +52,23 @@ export default function Navbar() {
   const handleClick = () => setToggle((prevToggle) => !prevToggle);
   const closeMenu = () => setToggle(false);
 
+  const [navClick, setnavClick] = useState(false);
+  const handleNav = () => setnavClick((prevNavClick) => !prevNavClick);
 
   return (
     <>
-      <motion.div initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 4,
-            type: "spring",
-            delay: 0.5
-          }} className="font-sans z-20 text-[#451c1c] mt-2">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 px-2 sm:px-8">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{
+          duration: 3,
+          type: "spring",
+          delay: 0.5,
+        }}
+        className="font-sans z-20 text-[#451c1c] mt-2"
+      >
+        <div className=" z-30 pt-4 pb-0 sm:px-6 ">
+          <div className="flex items-center justify-between h-16 px-2 ">
             {/* Logo */}
             <div className="flex items-center gap-3 rounded-2xl border border-white border-opacity-25">
               <img src={logo} alt="" className="h-12" />
@@ -63,20 +80,46 @@ export default function Navbar() {
             <div className="hidden md:flex">
               <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
                 {navLink.map((step) => (
-                  <NavLink key={step.id} to={step.link} className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium">
-                    
-                    {step.header}
-                  
+                  <NavLink
+                    key={step.id}
+                    to={step.link}
+                    className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                  >
+                    {/* {step.header} */}
+                    <ol className="text-[#505052] text-center px-2 py-1 rounded-md text-md font-medium">
+                      <button onClick={handleNav} className="flex">
+                        <a>{step.header}</a>
+                        {navClick ? (
+                          <img className="h-5" src={step.up} alt="" />
+                        ) : (
+                          <img className="h-6" src={step.down} alt="" />
+                        )}
+                      </button>
+                      {navClick && (
+                        <div className="text-sm">
+                          <NavLink to="/Waterside camping">
+                            <p className="hover:text-[#6941C6]">{step.ul1}</p>
+                          </NavLink>
+                          <NavLink to="/Mountaintop camping">
+                            <p className="hover:text-[#6941C6]">{step.ul2}</p>
+                          </NavLink>
+                        </div>
+                      )}
+                    </ol>
                   </NavLink>
                 ))}
               </div>
             </div>
-
+            {/* lastlinks */}
             <div className="hidden  md:flex gap-4 mt-2">
               <button className="rounded-xl px-4 py-2 border-2 border-gray-500 text-lg hover:opacity-70 transition duration-300 ease-in-out">
                 <div className="flex gap-1.5 text-black">
                   {/* <img src={discord} alt="" /> */}
-                  <a href="https://chat.whatsapp.com/L1RvnPmuVSGGDdFLbenzF1" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://chat.whatsapp.com/L1RvnPmuVSGGDdFLbenzF1"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Join Us
                   </a>
                 </div>
@@ -100,7 +143,7 @@ export default function Navbar() {
                 onClick={handleClick}
                 className="inline-flex items-center justify-center p-2 rounded-lg text-white hover:ring-white focus:outline-none focus:ring-2 focus:rig-offset-2 focus:ring-offset-white focus:ring-white"
               >
-                <span className="sr-only">Open main menu</span>
+                <span className="sr-only text-black">Open main menu</span>
                 {toggle ? (
                   <img className="h-8 w-8" src={close1} alt="" />
                 ) : (
@@ -113,18 +156,43 @@ export default function Navbar() {
         {/* Mobile Nav */}
         {toggle && (
           <div className="flex flex-col md:hidden">
+            <>
+              <ol className="text-[#505052]  px-2 py-1 rounded-md text-md font-medium">
+                <button onClick={handleNav} className="flex pl-[30%] text-center">
+                  <a className="">Types Of Camps</a>
+                  {navClick ? (
+                    <img className="h-5" src={up} alt="" />
+                  ) : (
+                    <img className="h-6" src={down} alt="" />
+                  )}
+                </button>
+                {navClick && (
+                  <div className="text-center">
+                    <NavLink to="/Waterside camping">
+                      <p className="hover:text-[#6941C6]">Waterside camping</p>
+                    </NavLink>
+                    <NavLink to="/Mountaintop camping">
+                      <p className="hover:text-[#6941C6]">
+                        Mountain Top Camping
+                      </p>
+                    </NavLink>
+                  </div>
+                )}
+              </ol>
+            </>
             <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
               {navLink.map((step) => (
-                <NavLink key={step.id} to={step.link} className="text-center cursor-pointer text-[#505052] hover:text-[#6941C6] block px-3 py-2 rounded-md text-base font-medium">
-                  
+                <NavLink
+                  key={step.id}
+                  to={step.link}
+                  className="text-center cursor-pointer text-[#505052] hover:text-[#6941C6] block px-3 py-2 rounded-md text-base font-medium"
+                >
                   {step.header}
-              
                 </NavLink>
               ))}
             </div>
           </div>
         )}
-        
       </motion.div>
     </>
   );

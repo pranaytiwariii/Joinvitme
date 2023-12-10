@@ -6,6 +6,7 @@
 // import Travelerspy from "./Components/Travelerspy"
 
 import MainRouter from "./Router"
+// import { SpeedInsights } from '@vercel/speed-insights/react';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     <TestLayout />
     <Footer /> */}
     <MainRouter />
+    {/* <SpeedInsights /> */}
     </>
   )
 }

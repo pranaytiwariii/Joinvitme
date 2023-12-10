@@ -2,7 +2,7 @@ import arrow from "/HeroSection/arrow-right.svg";
 import { topArr, bottomArr } from "./data";
 import { motion } from "framer-motion";
 
-export default function BookAdvanture() {
+export default function BookExp() {
   return (
     <section className="pl-2 bg-white text-center text-black relative md:p-0">
       <div className="badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
@@ -91,5 +91,5 @@ export default function BookAdvanture() {
         </div>
       ))}
     </section>
-  );
+  )
 }
