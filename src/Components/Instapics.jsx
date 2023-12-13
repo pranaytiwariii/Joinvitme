@@ -43,11 +43,11 @@ const cardData = [
   },
   {
     id: 6,
-    img: "/instapic/7.jpg",
+    img: "/instapic/7.webp",
   },
   {
     id: 7,
-    img: "/instapic/8.jpg",
+    img: "/instapic/8.webp",
   },
 ];
 

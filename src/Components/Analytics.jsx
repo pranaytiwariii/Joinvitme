@@ -135,10 +135,10 @@ export default function Analytics() {
               <img src="instapic/5.webp" alt="" />
             </div>
             <div className="flex justify-center content-center h-80 md:basis-1/3 pb-2  ">
-              <img src="instapic/7.jpg" alt="" />
+              <img src="instapic/7.webp" alt="" />
             </div>
             <div className=" flex justify-center content-center h-80 md:basis-1/3 pb-2  ">
-              <img src="instapic/9.jpg" alt="" />
+              <img src="instapic/9.webp" alt="" />
             </div>
           </div>
         </div>
