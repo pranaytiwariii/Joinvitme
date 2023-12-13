@@ -86,6 +86,7 @@ export default function BookAdvanture() {
               delay: 0.5,
             }}
             src={step.img}
+            alt="information photo"
             className="h-80"
           />
         </div>
