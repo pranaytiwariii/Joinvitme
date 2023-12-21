@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function BookExp() {
   return (
-    <section className="pl-2 bg-white text-center text-black relative md:p-0">
-      <div className="badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
-        <p className="label-1 bg-white pl-1 pr-1 justify-start rounded-2xl">
+    <section className="pl-2 bg-white mt-3 text-center text-black relative md:p-0">
+      <div className="z-[-10] badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
+        <p className="label-1 bg-white  pl-1 pr-1 justify-start rounded-2xl">
           New Journey
         </p>
         <div className="label-2 flex gap-1">
@@ -41,7 +41,7 @@ export default function BookExp() {
           className="relative z-10 flex flex-col items-center mb-5 md:mb-20 md:text-center"
           key={index}
         >
-          <p className="mb-5 text-4xl font-medium md:text-5xl">{step.head}</p>
+          <p className="mb-5 text-4xl font-medium  md:text-5xl">{step.head}</p>
           <p className="text-black text-xl md:max-w-xl max-w-sm">
             {step.subHead}
           </p>
@@ -62,10 +62,10 @@ export default function BookExp() {
             }}
             className="text-left md:text-left"
           >
-            <p className="max-w-sm mb-6 text-3xl leading-snug md:text-4xl">
+            <p className="max-w-sm mb-6 text-3xl leading-snug md:text-4xl ">
               {step.head}
             </p>
-            <p className="max-w-sm mb-5 text-xl font-bold">{step.subHead}</p>
+            <p className="max-w-sm mb-5 text-xl  font-bold">{step.subHead}</p>
             <p className="max-w-sm mb-6 text-xl text-black">
               {step.description}
             </p>
@@ -90,6 +90,7 @@ export default function BookExp() {
           />
         </div>
       ))}
+      
     </section>
   )
 }

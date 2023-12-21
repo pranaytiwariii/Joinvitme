@@ -12,7 +12,7 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 function App() {
 
   return (
-    <>
+    <div className="font-spline bg-grad">
     {/* <Navbar />
     <Travelerspy />
     <Analytics />
@@ -21,7 +21,7 @@ function App() {
     <Footer /> */}
     <MainRouter />
     <SpeedInsights />
-    </>
+    </div>
   )
 }
 

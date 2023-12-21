@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function BookAdvanture() {
   return (
-    <section className="pl-2 bg-white text-center text-black relative md:p-0">
+    <section className="pl-2 mt-3 bg-white text-center text-black relative md:p-0">
       <div className="badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
         <p className="label-1 bg-white pl-1 pr-1 justify-start rounded-2xl">
           New Journey
@@ -86,8 +86,8 @@ export default function BookAdvanture() {
               delay: 0.5,
             }}
             src={step.img}
-            alt="information photo"
-            className="h-80"
+            alt="information photoz"
+            className=" h-80"
           />
         </div>
       ))}

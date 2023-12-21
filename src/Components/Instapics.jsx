@@ -73,9 +73,9 @@ export default function Instapics() {
             </p>
           </div>
 
-          <div className="badge-section text-1xl m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
+          <div className="badge-section text-1xl m-auto px-2 text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
             <button className="label-2 flex gap-1">
-              <p>Checkout on Instagram</p>
+              <a href="https://www.instagram.com/joinvithme/">Checkout on Instagram</a>
             </button>
           </div>
         </div>

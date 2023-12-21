@@ -5,15 +5,15 @@ const data = [
     imgData: [
       {
         img: "/Footer/instagram.svg",
-        link: "/",
+        link: "https://www.instagram.com/joinvithme/",
       },
       {
         img: "/Footer/whatsapp.svg",
-        link: "/",
+        link: "https://wa.me/+918850733138",
       },
       {
         img: "/Footer/facebook.svg",
-        link: "/",
+        link: "https://www.facebook.com/Joinvithmee",
       },
     ],
     linkData1: [

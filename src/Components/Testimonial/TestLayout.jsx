@@ -5,8 +5,8 @@ import ReactPlayer from "react-player";
 const bottomArr = [
   {
     id: 0,
-    head: "Nikita Sharma",
-    subHead: "Senior developer at Microsoft  ",
+    head: "Nikita Sangoi",
+    subHead: "Senior product manager ",
     description:
       "Joined us for a memorable Raw Camping experience on 25th November 2023, Saturday. It was a realy awsome movement spending time with nature , exploring me 🏕🌌      ",
     img: "/Advanture/Niki's testomony.mp4",
@@ -24,19 +24,19 @@ const bottomArr = [
 const items = [
   {
     id: 1,
-    photo: "/Footer/logo.png",
-    person: "Pranay Tiwari",
-    about: "2nd year computer science student at Tcet.",
+    photo: "/testimonial/Niki.png",
+    person: "Niki Sangoi",
+    about: "Senior product manager",
     review:
-      "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
+      "I went solo on  two treks with JoinWithMe, and I am delighted to express my utmost satisfaction with their hospitality and organizational prowess. The team exhibited remarkable friendliness, rendering the experience both enjoyable and seamless. They attended to every detail, guaranteeing a fantastic adventure. I highly recommend JoinWithMe, particularly for female solo travelers in search of a supportive and well-hosted trekking experience.",
   },
   {
     id: 2,
-    photo: "/Footer/logo.png",
-    person: "Pranay Tiwari",
-    about: "2nd year computer science student at Tcet.",
+    photo: "/testimonial/Chinmay.png",
+    person: "Chinmay Sawant",
+    about: "Export Engineer",
     review:
-      "At Gravity Team, we are on the mission to balance the supply and demand across crypto markets worldwide. We are a crypto native market maker founded by traders, developers, and innovators who are strong believers and supporters of the future of decentralization and digital assets.",
+      "Joining the Raw Camping experience with JoinWithMe was a revelation for me. It was my first time camping, and the hands-on approach of pitching tents and cooking over a fire with minimal equipment was truly authentic. The simplicity of the experience made it an ideal introduction to camping for anyone new to the outdoors.       From the basics of setting up camp to preparing appetizing food, it was a genuine adventure in nature. Thanks to JoinWithMe for providing a unique and immersive way to connect with the great outdoors through raw camping.",
   },
   {
     id: 3,

@@ -7,17 +7,17 @@ export default function About() {
         {
           id: 0,
           img: "/Footer/instagram.svg",
-          link: "/",
+          link: "https://www.instagram.com/joinvithme/",
         },
         {
           id: 1,
           img: "/Footer/whatsapp.svg",
-          link: "/",
+          link: "https://wa.me/+918850733138",
         },
         {
           id: 2,
           img: "/Footer/facebook.svg",
-          link: "/",
+          link: "https://www.facebook.com/Joinvithmee",
         },
       ],
     },

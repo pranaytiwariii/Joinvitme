@@ -23,8 +23,9 @@ const navLink = [
   {
     id: 2,
     header: "Types of camps",
-    ul1: "Waterside Camping",
-    ul2: "Mountain top camping",
+    ul1:"Lakeside Camping",
+    ul2: "River Camping",
+    ul3: "Mountain top camping",
     link1: "/TypesOfCamps",
     link2: "/MountainTop",
     up: "/Navbar/up.png",
@@ -86,7 +87,7 @@ export default function Navbar() {
                     className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
                   >
                     {/* {step.header} */}
-                    <ol className="text-[#505052] text-center px-2 py-1 rounded-md text-md font-medium">
+                    <ol className="text-[#505052] text-center px-2 py-10 rounded-md text-md font-medium">
                       <button onClick={handleNav} className="flex">
                         {step.header}
                         {navClick ? (
@@ -102,6 +103,9 @@ export default function Navbar() {
                           </NavLink>
                           <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
                             {step.ul2}
+                          </NavLink>
+                          <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
+                            {step.ul3}
                           </NavLink>
                         </div>
                       )}

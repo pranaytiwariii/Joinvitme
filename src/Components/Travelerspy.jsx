@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Travelerspy() {
   return (
-    <section className=" flex mx-2 md:mx-4 flex-col items-center gap-12 ">
+    <section className=" flex mx-2 md:mx-4 flex-col pt-3 items-center gap-12 ">
       <div className="top-container">
         <NavLink to="/Adventure Calendar">
           <motion.div
@@ -37,7 +37,7 @@ export default function Travelerspy() {
           }}
           className="heading-section mt-3 flex flex-col gap-4 items-center"
         >
-          <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
+          <h1 className="text-2xl md:text-4xl  text-center flex-wrap">
             Explore the world with a smile
           </h1>
           <p className="text-gray-500 text-sm md:text-base  max-w-sm lg:max-w-lg overflow-hidden text-center">
