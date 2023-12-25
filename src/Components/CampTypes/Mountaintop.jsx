@@ -68,7 +68,7 @@ export default function Mountaintop() {
           }}
           className="heading-section mt-3 flex flex-col gap-4 items-center"
         >
-          <h1 className="text-2xl md:text-4xl font-semibold text-center flex-wrap">
+          <h1 className="text-2xl md:text-4xl text-[#6941C6] font-semibold text-center flex-wrap">
             Mountain Top Camping
           </h1>
           <p className="text-gray-500 text-sm md:text-base  max-w-sm lg:max-w-lg overflow-hidden text-center">

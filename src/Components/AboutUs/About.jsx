@@ -52,7 +52,7 @@ export default function About() {
               type: "spring",
               delay: 0.5,
             }}
-            className="text-3xl"
+            className="text-3xl text-[#6941C6]"
           >
             Your Gateway to Authentic Wilderness Experiences
           </motion.p>

@@ -26,8 +26,9 @@ const navLink = [
     ul1:"Lakeside Camping",
     ul2: "River Camping",
     ul3: "Mountain top camping",
-    link1: "/TypesOfCamps",
-    link2: "/MountainTop",
+    link2: "/Riverside camping",
+    link3: "/Mountaintop camping",
+    link1: "/Lakeside camping",
     up: "/Navbar/up.png",
     down: "/Navbar/down.png",
   },
@@ -98,10 +99,10 @@ export default function Navbar() {
                       </button>
                       {navClick && (
                         <div className="text-sm flex flex-col">
-                          <NavLink className="hover:text-[#6941C6]" to="/Waterside camping">
+                          <NavLink className="hover:text-[#6941C6]" to="/Lakeside camping">
                             {step.ul1}
                           </NavLink>
-                          <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
+                          <NavLink className="hover:text-[#6941C6]" to="/Riverside camping">
                             {step.ul2}
                           </NavLink>
                           <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
@@ -171,8 +172,11 @@ export default function Navbar() {
                 </button>
                 {navClick && (
                   <div className="flex flex-col text-center">
-                    <NavLink className="hover:text-[#6941C6]" to="/Waterside camping">
-                      Waterside camping
+                    <NavLink className="hover:text-[#6941C6]" to="/Lakeside camping">
+                      Lake side camping
+                    </NavLink>
+                    <NavLink className="hover:text-[#6941C6]" to="/Riverside camping">
+                      river side camping
                     </NavLink>
                     <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
                         Mountain Top Camping 
