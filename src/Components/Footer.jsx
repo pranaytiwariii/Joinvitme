@@ -42,10 +42,10 @@ const data = [
         title: "Adventure Calendar",
         link: "/Adventure Calendar",
       },
-      {id:5,
-        title: "Blogs",
-        link: "/Blogs",
-      },
+      // {id:5,
+      //   title: "Blogs",
+      //   link: "/Blogs",
+      // },
     ],
     addressData: [
       {

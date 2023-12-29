@@ -70,7 +70,7 @@ export default function BookAdvanture() {
               {step.description}
             </p>
             <a
-              href="https://lu.ma/6pluootr"
+              href={step.href}
               className="flex justify-center gap-2 mb-6 md:justify-start"
             >
               <p className="border-b">Learn more</p>

@@ -1,4 +1,4 @@
-import token from "/Advanture/karjat.jpg";
+// import token from "/Advanture/karjat.jpg";
 const topArr = [
   {
     head: "Adventure Calendar ",
@@ -14,7 +14,8 @@ const bottomArr = [
     subHead: "Join us for a memorable Raw Camping experience on 25th November 2023, Saturday.    ",
     description:
       "Embrace the beauty of the wilderness, forge connections around a bonfire, and create lasting memories. Limited slots are available. Don't miss out! 🏕🌌      ",
-    img: token,
+    img: "https://res.cloudinary.com/dq1eym2ol/image/upload/v1703833856/karjat_ljhpnv.jpg",
+    href:"https://lu.ma/6pluootr"
   },
   // {
   //   id:1,

@@ -23,7 +23,7 @@ const navLink = [
   {
     id: 2,
     header: "Types of camps",
-    ul1:"Lakeside Camping",
+    ul1: "Lakeside Camping",
     ul2: "River Camping",
     ul3: "Mountain top camping",
     link2: "/Riverside camping",
@@ -74,21 +74,24 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center gap-3 rounded-2xl border border-white border-opacity-25">
               <img src={logo} alt="" className="h-12" />
-              <a href="/" className="italic text-sm sm:text-lg font-semibold text-black">
+              <a
+                href="/"
+                className="italic text-sm sm:text-lg font-semibold text-black"
+              >
                 JOIN WITH ME
               </a>
             </div>
             {/* Navlinks */}
             <div className="hidden md:flex">
-              <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
+              {/* <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
                 {navLink.map((step) => (
                   <NavLink
                     key={step.id}
                     to={step.link}
                     className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
                   >
-                    {/* {step.header} */}
-                    <ol className="text-[#505052] text-center px-2 py-10 rounded-md text-md font-medium">
+                  // {/* {step.header} */}
+              {/* <ol className="text-[#505052] text-center px-2 py-10 rounded-md text-md font-medium">
                       <button onClick={handleNav} className="flex">
                         {step.header}
                         {navClick ? (
@@ -113,6 +116,60 @@ export default function Navbar() {
                     </ol>
                   </NavLink>
                 ))}
+              </div> */}
+              <div className="text-base 2xl:text-lg ml-10 flex items-baseline space-x-2">
+                <NavLink
+                  to="/"
+                  className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                >
+                Home
+                </NavLink>
+                <NavLink
+                  to="/Adventure Calendar"
+                  className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                >
+                  Adventure Calendar
+                </NavLink>
+                <NavLink
+                  to="/"
+                  className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                >
+                   <ol className="text-[#505052] text-center px-2 py-10 rounded-md text-md font-medium">
+                      <button onClick={handleNav} className="flex">
+                      Types of camps
+                        {navClick ? (
+                          <img className="h-5" src={up} alt="" />
+                        ) : (
+                          <img className="h-6" src={down} alt="" />
+                        )}
+                      </button>
+                      {navClick && (
+                        <div className="text-sm flex flex-col">
+                          <NavLink className="hover:text-[#6941C6]" to="/Lakeside camping">
+                          Lakeside camping
+                          </NavLink>
+                          <NavLink className="hover:text-[#6941C6]" to="/Riverside camping">
+                          Riverside camping
+                          </NavLink>
+                          <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
+                          Mountaintop camping
+                          </NavLink>
+                        </div>
+                      )}
+                    </ol>
+                </NavLink>
+                <NavLink
+                  to="/Book Experience"
+                  className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                >
+                  Book Experience
+                </NavLink>
+                <NavLink
+                  to="/About Us"
+                  className="text-[#505052] hover:text-[#6941C6] text-center px-2 py-1 rounded-md text-md font-medium"
+                >
+                  About Us
+                </NavLink>
               </div>
             </div>
             {/* lastlinks */}
@@ -161,29 +218,38 @@ export default function Navbar() {
         {/* Mobile Nav */}
         {toggle && (
           <div className="flex flex-col md:hidden">
-              <ol className="text-[#505052]  px-2 py-1 rounded-md text-md font-medium">
-                <button onClick={handleNav} className="flex pl-[30%] text-center">
-                  <p className="">Types Of Camps</p>
-                  {navClick ? (
-                    <img className="h-5" src={up} alt="" />
-                  ) : (
-                    <img className="h-6" src={down} alt="" />
-                  )}
-                </button>
-                {navClick && (
-                  <div className="flex flex-col text-center">
-                    <NavLink className="hover:text-[#6941C6]" to="/Lakeside camping">
-                      Lake side camping
-                    </NavLink>
-                    <NavLink className="hover:text-[#6941C6]" to="/Riverside camping">
-                      river side camping
-                    </NavLink>
-                    <NavLink className="hover:text-[#6941C6]" to="/Mountaintop camping">
-                        Mountain Top Camping 
-                    </NavLink>
-                  </div>
+            <ol className="text-[#505052]  px-2 py-1 rounded-md text-md font-medium">
+              <button onClick={handleNav} className="flex pl-[30%] text-center">
+                <p className="">Types Of Camps</p>
+                {navClick ? (
+                  <img className="h-5" src={up} alt="" />
+                ) : (
+                  <img className="h-6" src={down} alt="" />
                 )}
-              </ol>
+              </button>
+              {navClick && (
+                <div className="flex flex-col text-center">
+                  <NavLink
+                    className="hover:text-[#6941C6]"
+                    to="/Lakeside camping"
+                  >
+                    Lake side camping
+                  </NavLink>
+                  <NavLink
+                    className="hover:text-[#6941C6]"
+                    to="/Riverside camping"
+                  >
+                    river side camping
+                  </NavLink>
+                  <NavLink
+                    className="hover:text-[#6941C6]"
+                    to="/Mountaintop camping"
+                  >
+                    Mountain Top Camping
+                  </NavLink>
+                </div>
+              )}
+            </ol>
             <div className="px-2 pt-1 pb-3 space-y-1 sm:px-3">
               {navLink.map((step) => (
                 <NavLink
