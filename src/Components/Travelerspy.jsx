@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Travelerspy() {
   return (
-    <section className=" flex mx-2 md:mx-4 flex-col pt-3 items-center gap-12 ">
+    <section className=" flex mx-2 md:mx-4 flex-col pt-3 items-center gap-12 bg-gradi">
       <div className="top-container">
         <NavLink to="/Adventure Calendar">
           <motion.div
@@ -42,39 +42,43 @@ export default function Travelerspy() {
           </h1>
           <p className="text-gray-500 text-sm md:text-base  max-w-sm lg:max-w-lg overflow-hidden text-center">
             Welcome to Joinvithme, where we are passionate about connecting you
-            with the untamed beauty of the great outdoors. 
+            with the untamed beauty of the great outdoors.
           </p>
         </motion.div>
         <div className="btn-section flex justify-center gap-6 mt-8">
-          <motion.button
-            initial={{ x: "-7rem", opacity: 0 }}
-            animate={{ x: "0", opacity: 1 }}
-            transition={{
-              duration: 4,
-              type: "spring",
-              delay: 0.5,
-            }}
-            className="flex px-1 md:px-2 items-center gap-2 border rounded-md"
-          >
-            <img
-              width={30}
-              src="HeroSection/play-circle.svg"
-              alt="play-circle"
-            />
-            Book a private Experience
-          </motion.button>
-          <motion.button
-            initial={{ x: "7rem", opacity: 0 }}
-            animate={{ x: "0", opacity: 1 }}
-            transition={{
-              duration: 4,
-              type: "spring",
-              delay: 0.5,
-            }}
-            className="px-2 md:px-3 rounded-md bg-[#7F56D9] p-2 text-gray-50"
-          >
-            Join a Open Group Experience
-          </motion.button>
+          <NavLink to="/Book Experience">
+            <motion.button
+              initial={{ x: "-7rem", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{
+                duration: 4,
+                type: "spring",
+                delay: 0.5,
+              }}
+              className="flex px-1 md:px-2 items-center gap-2 border rounded-md"
+            >
+              <img
+                width={30}
+                src="HeroSection/play-circle.svg"
+                alt="play-circle"
+              />
+              Book a private Experience
+            </motion.button>
+          </NavLink>
+          <NavLink to="/Adventure Calendar">
+            <motion.button
+              initial={{ x: "7rem", opacity: 0 }}
+              animate={{ x: "0", opacity: 1 }}
+              transition={{
+                duration: 4,
+                type: "spring",
+                delay: 0.5,
+              }}
+              className="px-2 md:px-3 rounded-md bg-[#7F56D9] p-2 text-gray-50"
+            >
+              Join a Open Group Experience
+            </motion.button>
+          </NavLink>
         </div>
       </div>
       <motion.div

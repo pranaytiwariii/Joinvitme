@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function BookExp() {
   return (
-    <section className="pl-2 bg-white mt-3 text-center text-black relative md:p-0">
+    <section className="pl-2 bg-white mt-3 text-center text-black relative md:p-0 bg-grad">
       <div className="z-[-10] badge-section text-xs m-auto text-[#6941C6] flex gap-3 pt-1 pr-1 pb-1 pl-1 rounded-2xl w-max items-center justify-center bg-gray-100">
         <p className="label-1 bg-white  pl-1 pr-1 justify-start rounded-2xl">
           New Journey
@@ -42,11 +42,12 @@ export default function BookExp() {
           key={index}
         >
           <p className="mb-5 text-4xl font-medium  md:text-5xl">{step.head}</p>
-          <p className="text-black text-xl md:max-w-xl max-w-sm">
+          <p className="text-[#505052] text-xl md:max-w-xl max-w-sm">
             {step.subHead}
           </p>
         </motion.div>
       ))}
+      <div className="flex-col">
       {bottomArr.map((step, index) => (
         <div
           className="relative z-10 flex flex-col items-center justify-around mt-5 md:flex-row"
@@ -62,20 +63,40 @@ export default function BookExp() {
             }}
             className="text-left md:text-left"
           >
-            <p className="max-w-sm mb-6 text-3xl leading-snug md:text-4xl ">
+            <p className="max-w-sm text-3xl leading-snug md:text-4xl ">
               {step.head}
             </p>
-            <p className="max-w-sm mb-5 text-xl  font-bold">{step.subHead}</p>
-            <p className="max-w-sm mb-6 text-xl text-black">
+            <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: "0", opacity: 1 }}
+            transition={{
+              duration: 4,
+              type: "spring",
+              delay: 0.5,
+            }}
+            className="w-40 sm:w-72 mt-3 sm:mb-2 h-0.5 bg-gradient-to-r from-blue-500 via-blue-500 to-yellow-600/50"
+          ></motion.div>
+            <p className="max-w-sm mb-5 text-xl text-[#505052] font-bold">{step.subHead}</p>
+            {/* <p className="max-w-sm mb-6 text-xl text-[#505052]">
               {step.description}
-            </p>
+            </p> */}
             <a
               href="/"
-              className="flex justify-center gap-2 mb-6 md:justify-start"
+              className="flex justify-center gap-2 md:justify-start"
             >
               <p className="border-b">Learn more</p>
               <img src={arrow} />
             </a>
+            <motion.div
+            initial={{ x: "7rem", opacity: 0 }}
+            animate={{ x: "0", opacity: 1 }}
+            transition={{
+              duration: 4,
+              type: "spring",
+              delay: 0.5,
+            }}
+            className="w-40 sm:w-72 mt-3 sm:mt-5 h-0.5 bg-gradient-to-r from-blue-500 via-blue-500 to-yellow-600/50"
+          ></motion.div>
           </motion.div>
           <motion.img
             initial={{ y: "7rem", opacity: 0 }}
@@ -90,6 +111,7 @@ export default function BookExp() {
           />
         </div>
       ))}
+      </div>
       
     </section>
   )

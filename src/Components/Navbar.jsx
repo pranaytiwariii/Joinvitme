@@ -74,7 +74,7 @@ export default function Navbar() {
             {/* Logo */}
             <div className="flex items-center gap-3 rounded-2xl border border-white border-opacity-25">
               <img src={logo} alt="" className="h-12" />
-              <a href="/" className="italic text-sm sm:text-lg">
+              <a href="/" className="italic text-sm sm:text-lg font-semibold text-black">
                 JOIN WITH ME
               </a>
             </div>

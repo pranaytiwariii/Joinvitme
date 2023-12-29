@@ -8,11 +8,14 @@
 import MainRouter from "./Router"
 // import { SpeedInsights } from '@vercel/speed-insights/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800&display=swap');
+</style>
 
 function App() {
-
+  // font-spline
   return (
-    <div className="font-spline bg-grad">
+    <div className=" bg-grad">
     {/* <Navbar />
     <Travelerspy />
     <Analytics />
