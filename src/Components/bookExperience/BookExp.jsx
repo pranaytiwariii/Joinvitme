@@ -28,8 +28,8 @@ export default function BookExp() {
       <div className="flex gap-0 sm:gap-10 justify-center">
         <div className="relative w-1/3">
           <img
-            src="/book eperience/sharmatesti.jpg"
-            className=""
+            src="/book eperience/2.jpg"
+            className="h-11/2"
             alt=""
           />
           <div className="absolute text-2xl sm:text-5xl lg:text-7xl text-white text-start font-bold bottom-1/4">
@@ -69,7 +69,7 @@ export default function BookExp() {
           <img src="/book eperience/fullw.png" className="w-full py-3 px-0" alt="" />
         </div>
 
-        <div className="grid grid-cols-1  sm:grid-cols-2 gap-5">{bottomArr.map((step, index) => (
+        {/* <div className="grid grid-cols-1  sm:grid-cols-2 gap-5">{bottomArr.map((step, index) => (
         <div
           className="relative z-10 flex flex-col items-center justify-around mt-5 md:flex-row"
           key={index}
@@ -112,9 +112,9 @@ export default function BookExp() {
             className=" h-80"
           />
         </div>
-      ))}</div>
+      ))}</div> */}
 
-<div className="flex gap-0 pt-5 sm:gap-10 justify-center">
+{/* <div className="flex gap-0 pt-5 sm:gap-10 justify-center">
         <div className="relative w-1/2">
           <img
             src="/instapic/5.webp"
@@ -154,7 +154,7 @@ export default function BookExp() {
       </div>
       <button className="sm:hidden px-6 text-[#6941C6] rounded-full border-4 font-sm md:px-9 bg-white border-[#6941C6] font-euclid-bold">
       join a open group experience
-        </button>
+        </button> */}
     </section>
   );
 }

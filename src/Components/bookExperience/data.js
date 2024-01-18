@@ -1,4 +1,4 @@
-import token from "/Advanture/karjat.jpg";
+import token from "/book eperience/LakesideHike.png";
 const topArr = [
   {
     head: "Adventure Calendar ",
@@ -22,7 +22,15 @@ const bottomArr = [
     subHead: "Accelerate your token’s journey by boosting its liquidity",
     description:
       "We invest in building long-term, sustainable relationships and support our projects in their growth journey with our services, industry expertise and network.",
-    img: "/instapic/2.webp",
+    img: "/book eperience/RiversideHike.png",
+  },
+  {
+    id:2,
+    head: "Lake-side camping",
+    subHead: "Accelerate your token’s journey by boosting its liquidity",
+    description:
+      "We invest in building long-term, sustainable relationships and support our projects in their growth journey with our services, industry expertise and network.",
+    img: "/book eperience/OffbeatHike.png",
   },
 ];
 
