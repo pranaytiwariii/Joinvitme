@@ -10,26 +10,26 @@ const topArr = [
 const bottomArr = [
   {
     id:0,
-    head: "RAW CAMPING",
+    head: "LAKESIDE HIKE TO KARJAT",
     subHead: "Join us for a memorable Raw Camping experience on 25th November 2023, Saturday. 🏕🌌 ",
     description:
-      "Embrace the beauty of the wilderness, forge connections around a bonfire, and create lasting memories. Limited slots are available. Don't miss out! 🏕🌌      ",
+    "Explore a lakeside adventure with the entire hike tracing the water's edge. Discover a natural swimming haven for pets, creating a perfect retreatin nature. Its a befiner level easy hike. Perfect for every age group",
     img: token,
   },
   {
     id:1,
-    head: "Lake-side camping",
+    head: "HIKE TO BUDDHIST CAVES",
     subHead: "Accelerate your token’s journey by boosting its liquidity",
     description:
-      "We invest in building long-term, sustainable relationships and support our projects in their growth journey with our services, industry expertise and network.",
+      "Embark on a serene journey starting from a riverside trail, surrounded by lush greenery. Follow the path to discover captivating caves, once a Buddhist monastery, now emanating tranquil vibes.  Experience the enduring peace of this historic site",
     img: "/book eperience/RiversideHike.png",
   },
   {
     id:2,
-    head: "Lake-side camping",
+    head: "LAKESIDE HIKE AND FARM VISIT",
     subHead: "Accelerate your token’s journey by boosting its liquidity",
     description:
-      "We invest in building long-term, sustainable relationships and support our projects in their growth journey with our services, industry expertise and network.",
+      "Embark on an incredible hike through fruit-bearing trees leading to a hidden lakeside oasis in nature. On the return journey, indulge in a visit to a vegetable farm, savoring the bounty of green leafy vegetables and vibrant fruits to pluck it and take it home for dinner",
     img: "/book eperience/OffbeatHike.png",
   },
 ];

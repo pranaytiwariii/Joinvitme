@@ -31,11 +31,11 @@ export default function HikeCard() {
             }}
             className="text-left pl-10 md:text-left"
           >
-            <p className="max-w-sm mb-6 text-3xl leading-snug md:text-4xl">
+            <p className="max-w-sm mb-6 text-3xl leading-snug md:text-2xl">
               {step.head}
             </p>
             {/* <p className="max-w-sm mb-5 text-xl font-bold">{step.subHead}</p> */}
-            <p className="max-w-sm mb-6 text-xl text-black">
+            <p className="max-w-sm mb-6 text-md text-black">
               {step.description}
             </p>
             <a

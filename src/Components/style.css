@@ -1,0 +1,38 @@
+.topic-list {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  .topic {
+    cursor: pointer;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .topic.selected {
+    background-color: #ddd;
+  }
+  
+  .content-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+  }
+  
+  .topic-content {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .topic-content.active {
+    display: block;
+  }
+  
